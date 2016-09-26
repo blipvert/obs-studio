@@ -120,6 +120,8 @@ OBSBasic::OBSBasic(QWidget *parent)
 	: OBSMainWindow  (parent),
 	  ui             (new Ui::OBSBasic)
 {
+	setAcceptDrops(true);
+
 	ui->setupUi(this);
 	ui->previewDisabledLabel->setVisible(false);
 
